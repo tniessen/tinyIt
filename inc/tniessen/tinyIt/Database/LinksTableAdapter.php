@@ -255,7 +255,7 @@ class LinksTableAdapter extends TableAdapter
         $match = null;
         $success = false;
         while($row = $stmt->fetch(\PDO::FETCH_OBJ)) {
-            $pattern = '/' . $row->path . '/';
+            $pattern = '/^' . $row->path . '$/';
             $replacement = $row->target;
             $target = preg_replace($pattern, $replacement, $path, 1, $success);
             if($success) break;
