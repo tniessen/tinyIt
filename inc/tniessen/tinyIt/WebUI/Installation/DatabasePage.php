@@ -3,7 +3,6 @@ namespace tniessen\tinyIt\WebUI\Installation;
 
 use tniessen\tinyIt\WebUI\Page;
 use tniessen\tinyIt\WebUI\InstallationPage;
-use tniessen\tinyIt\WebUI\WebRenderer;
 use tniessen\tinyIt\Installer;
 use tniessen\tinyIt\Application;
 

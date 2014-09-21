@@ -3,7 +3,6 @@ namespace tniessen\tinyIt\WebUI\Settings\Own;
 
 use tniessen\tinyIt\WebUI\Page;
 use tniessen\tinyIt\WebUI\SettingsPage;
-use tniessen\tinyIt\WebUI\WebRenderer;
 use tniessen\tinyIt\Application;
 use tniessen\tinyIt\Security\Authorization;
 

@@ -3,6 +3,7 @@ namespace tniessen\tinyIt\WebUI\Links;
 
 use tniessen\tinyIt\Application;
 use tniessen\tinyIt\WebUI\Page;
+use tniessen\tinyIt\WebUI\WebRenderer;
 use tniessen\tinyIt\Security\Authorization;
 
 class ShortenLinkPage extends Page
