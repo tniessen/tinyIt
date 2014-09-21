@@ -1,0 +1,123 @@
+
+@import (reference) "../components/bootstrap/less/navs.less";
+@import (reference) "../components/bootstrap/less/variables.less";
+@import (reference) "../components/bootstrap/less/utilities.less";
+@import (reference) "../components/bootstrap/less/mixins.less";
+
+/* General */
+body {
+	padding-bottom: 20px;
+}
+
+.container-narrow {
+	max-width: 750px;
+}
+
+.container-super-narrow {
+	max-width: 420px;
+}
+
+/* Forms */
+.input-group {
+	margin-bottom: 10px;
+}
+
+.form-control.angular-top {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.form-control.angular-bottom {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* Installation wizard */
+body.installation-wizard .installation-intro {
+	text-align: center;
+}
+
+body.installation-wizard .input-group-addon {
+	min-width: 150px;
+}
+
+/* Login and registration page */
+body.login-page form,
+body.registration-page form {
+	margin-top: 200px;
+}
+
+/* Dashboard */
+body.dashboard > .container {
+	padding-top: 80px;
+}
+
+body.dashboard .jumbotron ul {
+	font-size: 19px;
+}
+
+/* User details */
+body.user-details .user-header {
+	margin-bottom: 40px;
+}
+
+body.user-details .user-image {
+	height: 150px;
+	text-align: center;
+}
+
+body.user-details .user-title  {
+	height: 150px;
+	// Center text vertically
+	padding: ((150px - @font-size-h1 - @line-height-computed * 1.5) / 2) 0;
+}
+
+/* Link / user /group list */
+body.dashboard table.links-table > tbody > tr > td > a,
+body.dashboard table.users-table > tbody > tr > td > a,
+body.dashboard table.groups-table > tbody > tr > td > a {
+	display: block;
+}
+body.dashboard table.links-table > tbody > tr > td > a:hover,
+body.dashboard table.users-table > tbody > tr > td > a:hover,
+body.dashboard table.groups-table > tbody > tr > td > a:hover {
+	text-decoration: none;
+}
+
+/* Responsive settings navigation */
+@media screen and (min-width: 990px) {
+	body.settings-page .settings .settings-nav-col {
+		padding-top: 40px;
+	}
+	body.settings-page .settings .settings-nav {
+		.nav-stacked;
+	}
+	body.settings-page .settings .settings-body {
+		border-left: 1px solid @gray-lighter;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	body.settings-page .settings .settings-nav {
+		.nav-justified;
+	}
+	body.settings-page .settings .settings-body {
+		border-top: 1px solid @gray-lighter;
+		margin-top: 10px;
+	}
+}
+
+/* Utility classes for vertical spacing */
+.prepend-vspace-none  { margin-top: 0px  !important; }
+.prepend-vspace-tiny  { margin-top: 5px  !important; }
+.prepend-vspace-small { margin-top: 9px  !important; }
+.prepend-vspace       { margin-top: 14px !important; }
+.prepend-vspace-big   { margin-top: 20px !important; }
+.prepend-vspace-huge  { margin-top: 38px !important; }
+
+.append-vspace-none  { margin-bottom: 0px  !important; }
+.append-vspace-tiny  { margin-bottom: 5px  !important; }
+.append-vspace-small { margin-bottom: 9px  !important; }
+.append-vspace       { margin-bottom: 14px !important; }
+.append-vspace-big   { margin-bottom: 20px !important; }
+.append-vspace-huge  { margin-bottom: 38px !important; }

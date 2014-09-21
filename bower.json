@@ -1,0 +1,27 @@
+{
+  "name": "tinyIt",
+  "version": "0.0.0",
+  "authors": [
+    "tniessen <tniessen@tnie.de>"
+  ],
+  "description": "Just another URL shortener written in PHP",
+  "main": "index.php",
+  "keywords": [
+    "php",
+    "url",
+    "url-shortener"
+  ],
+  "license": "CC BY-NC 3.0",
+  "homepage": "https://github.com/tniessen/tinyIt/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
