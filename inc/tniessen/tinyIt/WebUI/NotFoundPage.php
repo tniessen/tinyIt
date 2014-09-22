@@ -12,6 +12,6 @@ class NotFoundPage extends Page
 
     public function render()
     {
-        $this->renderTemplate('not-found');
+        $this->renderTemplate('notfound');
     }
 }
