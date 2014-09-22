@@ -163,7 +163,11 @@ class URL
         if(substr($this->path, -1) === '/') {
             return $this->path;
         }
-        return dirname($this->path) . '/';
+        $dir = dirname($this->path);
+        if($dir !== '/') {
+            $dir .= '/';
+        }
+        return $dir;
     }
 
     /**
